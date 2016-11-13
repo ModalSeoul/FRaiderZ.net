@@ -11,6 +11,7 @@ export class RegisterComponent implements OnInit {
   constructor(private User: UserService) { }
 
   ngOnInit() {
+    // TODO: Talk to Dave about getting CSRF setup/exempt.
     this.User.postRegister(
       'Hexpresso',
       'fuckme',

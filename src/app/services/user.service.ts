@@ -21,4 +21,16 @@ export class UserService {
     network$.subscribe();
     return network$;
   }
+
+  public getUserCount() {
+    const network$ = this.http.get('status').cache();
+    network$.subscribe();
+    return network$;
+  }
+
+  public getRanking() {
+    const network$ = this.http.get('ranking').cache();
+    network$.subscribe();
+    return network$;
+  }
 }
