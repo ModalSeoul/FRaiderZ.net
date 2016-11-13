@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
-  title = 'app works!';
+  private title: string = 'FRaiderZ - It\'s not peer 2 peer so Mike\'s useless!';
 }

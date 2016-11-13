@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+ ______ _____            _____ _____  ______ _____   ______
+ |  ____|  __ \     /\   |_   _|  __ \|  ____|  __ \ |___  /
+ | |__  | |__) |   /  \    | | | |  | | |__  | |__) |   / /
+ |  __| |  _  /   / /\ \   | | | |  | |  __| |  _  /   / /
+ | |    | | \ \  / ____ \ _| |_| |__| | |____| | \ \  / /__
+ |_|    |_|  \_\/_/    \_\_____|_____/|______|_|  \_\/_____|
+ -----------------------------------------------------------------------
+ * Yo, McSic. Not sure if you're familiar with SCSS, but here's a quick run-down.
+ * First off, don't freak out. If you don't want to take advantage of SCSS features,
+ * you can simply write normal CSS within these files and it will work just fine.
+ * First off, the main thing with SCSS for most people, is accessing children
+Example:
+
+                          .content-wrapper {
+
+                            .__header {
+                              display: flex;
+                              justify-content: center;
+                            }
+                          }
+
+* This would access the class "content-wrapper", then access content-wrapper's
+child, "__header(BEM standard naming)" and set __header's display to flex, as
+well as go ahead and justify-content pos.
+
+* Also, quickly, you can do shit like this too
+
+                        .header-item {
+                          background-color: #282828;
+                          color: #ccc;
+                          border: 1px solid #323232;
+                          transition: 1s;
+
+                          &:hover {
+                            background-color: #323232;
+                            border: 1px solid #373737;
+                          }
+                        }
+ * -----------------------------------------------------------------------*/
+
+body {
+ overflow: hidden;
+ font-family: sans-serif;
+ background-color: #DDD // Boobs
+}
