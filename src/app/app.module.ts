@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { AppRoutingModule } from './app.routes';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
@@ -10,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 
 import { UserService } from './services/user.service';
 import { HttpService } from './services/http.service';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +24,8 @@ import { HttpService } from './services/http.service';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [
     UserService,
