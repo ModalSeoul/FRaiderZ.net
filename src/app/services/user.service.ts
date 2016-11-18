@@ -14,9 +14,9 @@ export class UserService {
     email: string)
   {
     const network$ = this.http.post('register', {
-      username,
-      email,
-      password
+      username: username,
+      email: email,
+      password: password
     }).cache();
     network$.subscribe();
     return network$;

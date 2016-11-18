@@ -1,0 +1,13 @@
+.fraiderz__home {
+  &__count  {
+    &__low {
+      color: red;
+    }
+    &__medium {
+      color: blue;
+    }
+    &__green {
+      color: green;
+    }
+  }
+}

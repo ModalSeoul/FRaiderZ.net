@@ -1,3 +1,14 @@
-<p>
-  register works!
-</p>
+<div class="register">
+  <div class="register__input">
+    <input type="text" [(ngModel)]="username">
+    <input type="text" [(ngModel)]="email">
+    <input type="password" [(ngModel)]="password">
+    <input type="password" [(ngModel)]="confirm_password">
+  </div>
+  <div class="register__button">
+    <input (click)="register()" type="button" class="btn-frdz" value="Register">
+  </div>
+  <div *ngIf="notMatching">
+    <h3>Passwords do not match!</h3>
+  </div>
+</div>
