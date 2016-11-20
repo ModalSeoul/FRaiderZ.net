@@ -1,5 +1,10 @@
 <div class="fraiderz__home">
-  <div class="fraiderz__home__count">
-    <span class="fraiderz__home__count__medium">{{content.user_count}}</span> players online!
+  <div class="fraiderz__home__hero">
+    <h1>Fucking content</h1>
+    <div *ngIf="content.user_count" class="fraiderz__home__count">
+      <span class="fraiderz__home__count__green">
+        {{content.user_count}}
+      </span> players online!
+    </div>
   </div>
 </div>

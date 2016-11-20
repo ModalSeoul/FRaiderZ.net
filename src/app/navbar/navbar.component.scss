@@ -8,13 +8,12 @@
   right: 0;
   top: 0;
   height: 6rem;
-  justify-content: flex-end;
+  justify-content: center;
 
   &__list {
     color: white;
     display: inherit;
     list-style: none;
-
 
     &__sector {
       margin-top: -1rem;
@@ -23,13 +22,13 @@
 
       &:hover {
         background-color: $fw-black;
+        color: $fw-blue;
         cursor: pointer;
       }
 
       &__item {
         height: 100%;
         padding: 1rem;
-        // padding-left: .5rem;
         margin: 1rem;
       }
     }

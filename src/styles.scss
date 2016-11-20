@@ -1,5 +1,5 @@
 /*
- ______ _____            _____ _____  ______ _____   ______
+  ______ _____            _____ _____  ______ _____   ______
  |  ____|  __ \     /\   |_   _|  __ \|  ____|  __ \ |___  /
  | |__  | |__) |   /  \    | | | |  | | |__  | |__) |   / /
  |  __| |  _  /   / /\ \   | | | |  | |  __| |  _  /   / /
@@ -38,24 +38,35 @@ well as go ahead and justify-content pos.
                           }
                         }
  * -----------------------------------------------------------------------*/
+@import './scss/_colors.scss';
 
 body {
  overflow: hidden;
  font-family: sans-serif;
  background-color: #ffffff;
+ color: $fw-2gray;
 }
 
 .btn-frdz {
-  background-color: #2659FF;
+  background-color: $fw-blue;
   border: none;
   color: white;
   padding: .5rem;
   margin-top: .5rem;
+  transition: .5s;
+
+  &:hover {
+    background-color: $fw-black;
+    color: $fw-blue;
+  }
 }
 
 .txt-frdz {
-  border: 1px solid #2659FF;
+  border: 1px solid $fw-blue;
   font-family: sans-serif;
   color: #DDD;
-  margin-top: .1rem;
+  margin-top: .3rem;
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+  padding-left: .2rem;
 }

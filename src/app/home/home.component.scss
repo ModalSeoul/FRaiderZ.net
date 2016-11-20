@@ -1,4 +1,17 @@
 .fraiderz__home {
+
+  &__hero {
+    position: absolute;
+    // TODO: Get non-placeholder assets from McSic/Dave.
+    background: url('http://assets.razerzone.com/eeimages/razer_pages/24924/razer-overwatch-header-mobile.jpg') no-repeat;
+    background-size: cover;
+    padding-bottom: 20%;
+    padding-left: 1rem;
+    left: 0;
+    right: 0;
+    top: 6rem;
+  }
+
   &__count  {
     &__low {
       color: red;
@@ -7,7 +20,7 @@
       color: blue;
     }
     &__green {
-      color: green;
+      color: #00ff00;
     }
   }
 }
