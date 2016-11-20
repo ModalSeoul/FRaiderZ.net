@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 
 import { UserService } from './services/user.service';
 import { HttpService } from './services/http.service';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HttpService } from './services/http.service';
     AppComponent,
     HomeComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
