@@ -7,7 +7,7 @@
   left: 0;
   right: 0;
   top: 0;
-  height: 6rem;
+  height: 5rem;
   justify-content: center;
 
   &__list {
@@ -17,8 +17,10 @@
 
     &__sector {
       margin-top: -1rem;
-      height: 6rem;
+      height: 5rem;
       transition: .5s;
+      font-family: 'Oswald';
+      font-size: 18px;
 
       &:hover {
         background-color: $fw-black;

@@ -4,9 +4,9 @@
     <input type="text" class="txt-frdz" [(ngModel)]="email" placeholder="Email">
     <input type="password" class="txt-frdz"  [(ngModel)]="password" placeholder="Password">
     <input type="password" class="txt-frdz"  [(ngModel)]="confirm_password" placeholder="Confirm Password">
-  </div>
-  <div class="register__button">
-    <input (click)="register()" type="button" class="btn-frdz" value="Register">
+    <div class="register__button">
+      <input (click)="register()" type="button" class="btn-frdz" value="Register">
+    </div>
   </div>
   <div *ngIf="notMatching">
     <h3>Passwords do not match!</h3>
